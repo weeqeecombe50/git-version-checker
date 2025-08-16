@@ -34,6 +34,9 @@ def main():
     version = check_git_version()
     print(version)
 
+    # Log successful version retrieval
+    print('Git-Version erfolgreich abgerufen.')
+
     print('\nLetzte 5 Kommittierungen:')
     commit_history = get_commit_history()
     for commit in commit_history:
